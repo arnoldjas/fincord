@@ -6,12 +6,12 @@ import androidx.room.PrimaryKey
 @Entity
 data class Record(
     @PrimaryKey
-    private val recordId: Int,
-    private val category: String,
-    private val name: String,
-    private val amount: String,
-    private val date: String,
-    private val periodic: String,
-    private val note: String,
-    private val cashFlowId: Int
+    val recordId: Int,
+    val category: String,
+    val name: String,
+    val amount: String,
+    val date: String,
+    val periodic: String,
+    val note: String,
+    val cashFlowId: Int
 )
