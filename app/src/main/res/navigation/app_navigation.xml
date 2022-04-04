@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/main_fragment">
+
+    <fragment
+        android:id="@+id/main_fragment"
+        android:name="com.ajcoding.fincord.ui.main.MainFragment"
+        android:label="Home"
+        tools:layout="@layout/main_fragment">
+
+        <action
+            android:id="@+id/action_main_fragment_to_detail_fragment"
+            app:destination="@id/detail_fragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="com.ajcoding.fincord.ui.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/detail_fragment">
+
+    </fragment>
+
+</navigation>
