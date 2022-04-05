@@ -6,16 +6,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:theme="@style/Theme.Fincord">
 
-    <ImageView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/arrow_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_arrow_left"
         android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:icon="@drawable/ic_arrow_left"
+        style="@style/Widget.App.Button.TextButton.IconOnly"/>
 
-    <TextView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/title_month"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -24,19 +25,24 @@
         android:ellipsize="end"
         android:textSize="24dp"
         android:textStyle="bold"
-        android:layout_margin="25dp"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_calendar"
+        app:iconGravity="textStart"
+        android:layout_marginTop="14dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         app:layout_constraintStart_toEndOf="@id/arrow_left"
         app:layout_constraintEnd_toStartOf="@id/arrow_right"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <ImageView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/arrow_right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_arrow_right"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="16dp"/>
+        android:layout_margin="16dp"
+        app:icon="@drawable/ic_arrow_right"
+        style="@style/Widget.App.Button.TextButton.IconOnly"/>
 
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/divider1"
