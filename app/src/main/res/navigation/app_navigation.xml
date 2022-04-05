@@ -9,7 +9,7 @@
         android:id="@+id/main_fragment"
         android:name="com.ajcoding.fincord.ui.main.MainFragment"
         android:label="Home"
-        tools:layout="@layout/main_fragment">
+        tools:layout="@layout/fragment_main">
 
         <action
             android:id="@+id/action_main_fragment_to_detail_fragment"
@@ -21,7 +21,7 @@
         android:id="@+id/detail_fragment"
         android:name="com.ajcoding.fincord.ui.detail.DetailFragment"
         android:label="Detail"
-        tools:layout="@layout/detail_fragment">
+        tools:layout="@layout/fragment_detail">
 
     </fragment>
 
